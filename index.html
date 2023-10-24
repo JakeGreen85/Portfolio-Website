@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="navigation">
+        <script>
+        fetch("navigation.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("navigation").innerHTML = data;
+            });
+        </script>
+    </div>
+
+    
+    <div class="Header">
+      <h1>Portfolio for Jakob Niemann Green</h1>
+    </div>
+
+    <div class="front-page-sections">
+      <h2>Introduction</h2>
+      <p>
+        Information about myself
+      </p>
+    </div>
+
+    <div class="footnote">
+      <a href="" target="_blank">Instagram</a>
+      <a href="" target="_blank">Facebook</a>
+      <a href="" target="_blank">LinkedIn</a>
+      <a href="" target="_blank">Github</a>
+      <a href="" target="_blank">Unity Games</a>
+    </div>
+
+  </body>
+</html>
